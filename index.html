@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Starter Helper</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="starter-style.css">
+    </head>
+
+    <body>
+        <form class="calcForm" autocomplete="off">
+            <div class="headerRow">
+                <div class="state-container" id="messageTextContainer">
+                    <h4 class="messageText">Who Should I Start This Week?</h4>
+                </div>
+            </div>
+            <div class="radioRow">
+                <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="dynasty"
+                      value=0
+                      checked
+                    />
+                    <label class="form-check-label" for="dynasty">Dynasty</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="dynastyPPR"
+                      value=1
+                    />
+                    <label class="form-check-label" for="dynastyPPR">Dynasty PPR</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="seasonal"
+                      value=2
+                    />
+                    <label class="form-check-label" for="seasonal">Seasonal</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="seasonalPPR"
+                      value=3
+                    />
+                    <label class="form-check-label" for="seasonalPPR">Seasonal PPR</label>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row calc">
+                    <div class="col playerDiv">
+                        <h2 class="playerTitle">Player 1</h2>
+                        <div id="playerSection1" class="playerSection1">
+                            
+                        </div>
+                    </div>
+                    <div class="col playerDiv">
+                        <h2 class="playerTitle">Player 2</h2>
+                        <div id="playerSection2" class="playerSection2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row resultTextContainer" id="resultTextContainer">
+                    
+                </div>
+                <div class="row inputDiv">
+                    <div class="autocomplete">
+                        <input id="playerInput" type="text" name="Player Input" placeholder="Player Name" class="playerInput">
+                    </div>
+                    <p class="helperText">* Select two players to compare!</p>
+                </div>
+                
+            </div>
+            
+            
+        </form>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="starter-script.js"></script>
+        <script>
+        </script>
+    </body>
+</html>

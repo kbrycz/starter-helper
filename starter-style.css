@@ -1,0 +1,390 @@
+
+
+.calcForm {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+    border: 1px solid rgba(102, 102, 102, 0.39);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    padding-bottom: 80px;
+}
+
+.headerRow {
+  background-color: #383838;
+}
+.radioRow {
+  margin-top: -20px;
+  margin-bottom: 60px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  background-color: #e4e4e4;
+}
+
+.messageText {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+  padding: 50px;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.playerInput {
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.615);
+}
+
+.helperText {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.playerTitle {
+    text-align: center;
+    background-color: #c0392b;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 32px;
+}
+
+.playerDiv:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.23);
+}
+
+.starterMessage {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 120px;
+}
+
+.resultText {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.inputDiv {
+    margin-top: 80px;
+}
+
+.calc {
+    margin-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+.playerRow:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  .playerRow:nth-child(even) .deletePlayerButton{
+    background-color: #f5f5f5;
+  }
+  
+  .playerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.137);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    width: 90%;
+
+  }
+  
+  
+  .deletePlayerButton {
+    color: #c0392b;
+    font-size: 24px;
+    font-weight: 800;
+    background-color: #fff;
+    border: none;
+    flex: 0;
+  }
+  
+  .deletePlayerButton:hover {
+    color: #88291f;
+    transition: .5s;
+  }
+  
+  .playerNameItem {
+    color: #4d4d4d;
+    font-size: 20px;
+    font-weight: 500;
+    flex: auto;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  .playerScore {
+    color: #4d4d4d;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 8px;
+    flex: 0;
+    margin-right: 1px;
+    margin-left: 10px;
+    float: right;
+  }
+
+
+/* THIS IS THE DROPDOWN */
+
+* { box-sizing: border-box; }
+
+/*the container must be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+input {
+    border: 2px solid rgba(0, 0, 0, 0.336);
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid rgba(0, 0, 0, 0.616);
+}
+
+
+.autocomplete-items {
+    position: absolute;
+    display: inline-block;
+    border: 1px solid #e4e4e4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.player-info {
+    font-size: 14px;
+}
+
+.autocomplete-items div {
+    padding-top: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #e4e4e4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover p {
+    transition: .2s;
+    background-color: #c0392b; 
+    color: #fff;
+}
+
+.autocomplete-items div:hover {
+    transition: .2s;
+    background-color: #c0392b; 
+    color: #fff;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: #c0392b !important; 
+    color: #fff;
+}
+
+.autocomplete-active  p {
+    color: #fff;
+}
+
+/* END OF DROPDOWN */
+
+
+/* CHECKBOX STYLING */
+
+.form-check label {
+    margin-left: 10px;
+    margin-top: -5px;
+  }
+  
+
+  .form-check-input:checked {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    outline: none;
+  }
+  
+  input[type="radio"]:active {
+    background-color: #fff;
+    border-color: #c0392b;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .calc {
+        margin-top: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      .deletePlayerButton {
+        font-size: 14px;
+      }
+      .playerNameItem {
+        font-size: 14px;
+        text-align: center;
+        margin-left: 20px;
+      }
+      
+      .playerScore {
+        font-size: 14px;
+      }
+  
+      .form-check label {
+       font-size: 80%;
+      }
+
+      .messageText {
+        font-size: 32px;
+      }
+      
+      .playerInput {
+          padding: 10px;
+          font-size: 20px;
+      }
+
+    .starterMessage {
+        margin-top: 100px;
+        font-size: 18px;
+        margin-bottom: 90px;
+    }
+
+    .playerRow {
+        margin-top: 70px;
+    
+      }
+    
+    .resultText {
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+    .inputDiv {
+        margin-top: 50px;
+    }
+    .playerTitle {
+        font-size: 24px;
+    }
+
+    .autocomplete-items {
+        font-size: 18px;
+    }
+
+    .player-info {
+        font-size: 12px;
+    }
+
+    .form-check label {
+        font-size: 80%;
+       }
+   
+  }
+
+  @media only screen and (max-width: 700px) {
+
+    .calc {
+        flex-direction: column;
+      }
+
+      .playerDiv:after {
+        margin-bottom: 50px;
+    }
+
+    .messageText {
+        font-size: 28px;
+        line-height: 40px;
+      }
+
+    .deletePlayerButton {
+        font-size: 14px;
+      }
+      .playerNameItem {
+        font-size: 14px;
+        text-align: center;
+      }
+      
+      .playerScore {
+        font-size: 14px;
+        margin-top: 7px;
+      }
+
+      .playerRow {
+        width: 90%;
+      }
+
+      .inputDiv {
+        margin-top: 20px;
+    }
+
+    .form-check {
+        width: 80%;
+        padding: 8px;
+        font-size: 18px;
+      }
+
+    .resultText {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        font-size: 18px;
+        width: 80%;
+        line-height: 28px;
+    }
+
+    .autocomplete-items {
+        font-size: 16px;
+    }
+
+    .calcForm {
+        margin-top: 10%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 15%;
+      }
+
+
+  }
